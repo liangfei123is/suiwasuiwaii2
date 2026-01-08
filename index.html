@@ -28,6 +28,8 @@
                 <li><a href="#profile" class="navbar-link">个人简介</a></li>
                 <li><a href="#expertise" class="navbar-link">专业领域</a></li>
                 <li><a href="#contact" class="navbar-link">联系方式</a></li>
+                <li><a href="#message-board" class="navbar-link">留言板</a></li>
+                <li><a href="#reviews" class="navbar-link">评论区</a></li>
             </ul>
         </div>
     </nav>
@@ -62,9 +64,16 @@
                         <p class="profile-paragraph">
                             朱爱丽律师，华东政法大学法学硕士，2017年起从事破产法律工作，主要从事公司破产清算与重整业务，民商事争议解决，企业常年法律顾问业务。擅长在诉讼及执行程序过程中综合运用法律手段和非诉谈判方式解决纠纷。
 承办破产项目：
-上海健一网大药房连锁经营有限公司破产清算转重整案；上海申鼎国际科技有限公司破产清算案；上海熊猫互娱文化有限公司破产清算案；上海协同科技股份有限公司破产清算案；上海金山卫汽摩配实业发展有限公司重整案；永远二十一（商业）上海有限公司破产清算案等。
-中国东方资产管理股份有限公司上海市分公司商业化收购中望置业逾期借款债权并进行债务重组项目；中国东方资产管理股份有限公司上海市分公司商业化收购中山港口不良债权项目等；江苏羿鹏私募基金管理有限公司出出具私募基金法律意见书。
-中国东方资产管理股份有限公司上海市分公司与上海丰储建材有限公司、上海生阳建材有限公司等金融借款合同纠纷；平安银行股份有限公司上海分行与上海茨登贸易有限公司等执行异议之诉；上海协同科技股份有限公司与上海增慧电子科技有限公司破产撤销权纠纷一案。 
+1.上海健一网大药房连锁经营有限公司破产清算转重整案；                                                                   2.上海申鼎国际科技有限公司破产清算案；                                                                                       3.上海熊猫互娱文化有限公司破产清算案；                                                                                       4.上海协同科技股份有限公司破产清算案；
+5.上海金山卫汽摩配实业发展有限公司重整案；
+6.永远二十一（商业）上海有限公司破产清算案等。
+7.中国东方资产管理股份有限公司上海市分公司商业化收购中望置业逾期借款债权并进行债务重组项目；
+8.中国东方资产管理股份有限公司上海市分公司商业化收购中山港口不良债权项目等；
+9.江苏羿鹏私募基金管理有限公司出出具私募基金法律意见书。
+10.中国东方资产管理股份有限公司上海市分公司与上海丰储建材有限公司、
+11.上海生阳建材有限公司等金融借款合同纠纷；
+12.平安银行股份有限公司上海分行与上海茨登贸易有限公司等执行异议之诉；
+13.上海协同科技股份有限公司与上海增慧电子科技有限公司破产撤销权纠纷一案。 
 
 
                         </p>
@@ -96,7 +105,7 @@
                     <a href="services/intellectual-property.html" class="expertise-card-link">
                         <div class="expertise-card">
                             <div class="expertise-icon">📚</div>
-                            <h3 class="expertise-title">知识产权</h3>
+                            <h3 class="expertise-title">企业破产管理</h3>
                             <p class="expertise-description">
                                 商标、专利、著作权保护及侵权诉讼
                             </p>
@@ -157,6 +166,121 @@
                 </div>
             </div>
         </section>
+
+        <!-- 留言板 -->
+        <section id="message-board" class="section message-board-section">
+            <div class="container">
+                <h2 class="section-title">留言板</h2>
+                <div class="message-board-content">
+                    <!-- 留言表单 -->
+                    <div class="message-form-container">
+                        <h3 class="form-title">写下您的留言</h3>
+                        <form id="message-form" class="message-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">姓名</label>
+                                <input type="text" id="name" name="name" class="form-input" required placeholder="请输入您的姓名">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">邮箱</label>
+                                <input type="email" id="email" name="email" class="form-input" required placeholder="请输入您的邮箱">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">留言内容</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="请输入您的留言"></textarea>
+                            </div>
+                            <button type="submit" class="btn submit-btn">提交留言</button>
+                        </form>
+                    </div>
+
+                    <!-- 留言列表 -->
+                    <div class="messages-container">
+                        <h3 class="messages-title">留言列表</h3>
+                        <div id="messages-list" class="messages-list">
+                            <!-- 留言将通过JavaScript动态添加 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 评论区 -->
+        <section id="reviews" class="section reviews-section">
+            <div class="container">
+                <h2 class="section-title">评论区</h2>
+                <div class="reviews-content">
+                    <!-- 评论表单 -->
+                    <div class="review-form-container">
+                        <h3 class="form-title">提交评价</h3>
+                        <form id="review-form" class="review-form">
+                            <div class="form-group">
+                                <label for="reviewer-name" class="form-label">用户名</label>
+                                <input type="text" id="reviewer-name" name="reviewer-name" class="form-input" required placeholder="用户名">
+                            </div>
+                            
+                            <!-- 服务体验评价 -->
+                            <div class="form-group">
+                                <label class="form-label">服务体验评价</label>
+                                <div class="rating-container">
+                                    <div class="rating-stars" data-rating="service">
+                                        <span class="star" data-value="1">★</span>
+                                        <span class="star" data-value="2">★</span>
+                                        <span class="star" data-value="3">★</span>
+                                        <span class="star" data-value="4">★</span>
+                                        <span class="star" data-value="5">★</span>
+                                    </div>
+                                    <span class="rating-value">0</span>
+                                </div>
+                            </div>
+                            
+                            <!-- 专业度评价 -->
+                            <div class="form-group">
+                                <label class="form-label">专业度评价</label>
+                                <div class="rating-container">
+                                    <div class="rating-stars" data-rating="professionalism">
+                                        <span class="star" data-value="1">★</span>
+                                        <span class="star" data-value="2">★</span>
+                                        <span class="star" data-value="3">★</span>
+                                        <span class="star" data-value="4">★</span>
+                                        <span class="star" data-value="5">★</span>
+                                    </div>
+                                    <span class="rating-value">0</span>
+                                </div>
+                            </div>
+                            
+                            <!-- 沟通体验感评价 -->
+                            <div class="form-group">
+                                <label class="form-label">沟通体验感评价</label>
+                                <div class="rating-container">
+                                    <div class="rating-stars" data-rating="communication">
+                                        <span class="star" data-value="1">★</span>
+                                        <span class="star" data-value="2">★</span>
+                                        <span class="star" data-value="3">★</span>
+                                        <span class="star" data-value="4">★</span>
+                                        <span class="star" data-value="5">★</span>
+                                    </div>
+                                    <span class="rating-value">0</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="review-content" class="form-label">评价内容</label>
+                                <textarea id="review-content" name="review-content" class="form-textarea" rows="4" required placeholder="请输入您的评价"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn submit-btn">提交评价</button>
+                        </form>
+                    </div>
+
+                    <!-- 评价列表 -->
+                    <div class="reviews-container">
+                        <h3 class="reviews-title">评价列表</h3>
+                        <div id="reviews-list" class="reviews-list">
+                            <!-- 评价将通过JavaScript动态添加 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- 页脚 -->
@@ -170,6 +294,8 @@
                     <a href="#profile" class="footer-link">个人简介</a>
                     <a href="#expertise" class="footer-link">专业领域</a>
                     <a href="#contact" class="footer-link">联系方式</a>
+                    <a href="#message-board" class="footer-link">留言板</a>
+                    <a href="#reviews" class="footer-link">评论区</a>
                 </div>
             </div>
         </div>
@@ -184,6 +310,329 @@
                 splashScreen.classList.add('hidden');
             }, 2000);
         });
+    </script>
+
+    <!-- 留言板功能脚本 -->
+    <script>
+        // 页面加载时显示已保存的留言和评价
+        document.addEventListener('DOMContentLoaded', function() {
+            loadMessages();
+            loadReviews();
+            initRatingStars();
+        });
+
+        // 获取留言表单和留言列表
+        const messageForm = document.getElementById('message-form');
+        const messagesList = document.getElementById('messages-list');
+
+        // 监听表单提交事件
+        messageForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 获取表单数据
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // 创建留言对象
+            const newMessage = {
+                id: Date.now(), // 使用时间戳作为唯一ID
+                name: name,
+                email: email,
+                message: message,
+                date: new Date().toLocaleString('zh-CN') // 格式化日期
+            };
+            
+            // 保存留言
+            saveMessage(newMessage);
+            
+            // 显示新留言
+            displayMessage(newMessage);
+            
+            // 清空表单
+            messageForm.reset();
+        });
+
+        // 保存留言到localStorage
+        function saveMessage(message) {
+            // 获取现有留言
+            let messages = JSON.parse(localStorage.getItem('messages')) || [];
+            
+            // 添加新留言
+            messages.unshift(message); // 添加到数组开头，最新的留言显示在最上面
+            
+            // 保存回localStorage
+            localStorage.setItem('messages', JSON.stringify(messages));
+        }
+
+        // 加载所有留言
+        function loadMessages() {
+            // 获取现有留言
+            let messages = JSON.parse(localStorage.getItem('messages')) || [];
+            
+            // 清空留言列表
+            messagesList.innerHTML = '';
+            
+            // 显示所有留言
+            messages.forEach(message => {
+                displayMessage(message);
+            });
+        }
+
+        // 加密函数，只显示第一位和末尾
+        function encryptText(text) {
+            if (!text || text.length <= 2) {
+                return text;
+            }
+            const firstChar = text[0];
+            const lastChar = text[text.length - 1];
+            const middleLength = text.length - 2;
+            const encryptedMiddle = '*'.repeat(middleLength);
+            return firstChar + encryptedMiddle + lastChar;
+        }
+
+        // 显示单个留言
+        function displayMessage(message) {
+            // 创建留言元素
+            const messageItem = document.createElement('div');
+            messageItem.className = 'message-item';
+            
+            // 加密邮箱和留言内容
+            const encryptedEmail = encryptText(message.email);
+            const encryptedMessage = encryptText(message.message);
+            
+            // 构建留言HTML
+            messageItem.innerHTML = `
+                <div class="message-header">
+                    <div class="message-name">${escapeHtml(message.name)}</div>
+                    <div class="message-date">${message.date}</div>
+                </div>
+                <div class="message-content">${escapeHtml(encryptedMessage)}</div>
+                <div class="message-email">${escapeHtml(encryptedEmail)}</div>
+            `;
+            
+            // 添加到留言列表
+            messagesList.appendChild(messageItem);
+        }
+
+        // HTML转义函数，防止XSS攻击
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // 评论区功能
+        // 初始化星级评分
+        function initRatingStars() {
+            const ratingStars = document.querySelectorAll('.rating-stars');
+            
+            ratingStars.forEach(container => {
+                const stars = container.querySelectorAll('.star');
+                
+                stars.forEach(star => {
+                    star.addEventListener('click', function() {
+                        const value = parseInt(this.dataset.value);
+                        setRating(container, value);
+                    });
+                });
+            });
+        }
+
+        // 设置星级评分
+        function setRating(container, value) {
+            const stars = container.querySelectorAll('.star');
+            const ratingValue = container.nextElementSibling;
+            
+            stars.forEach(star => {
+                const starValue = parseInt(star.dataset.value);
+                if (starValue <= value) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+            
+            ratingValue.textContent = value;
+        }
+
+        // 获取评论表单和评论列表
+        const reviewForm = document.getElementById('review-form');
+        const reviewsList = document.getElementById('reviews-list');
+
+        // 获取用户IP地址（使用第三方服务）
+        function getUserIP() {
+            return new Promise((resolve) => {
+                // 尝试使用ipify.org获取IP地址
+                fetch('https://api.ipify.org?format=json')
+                    .then(response => response.json())
+                    .then(data => {
+                        resolve(data.ip);
+                    })
+                    .catch(() => {
+                        // 如果获取失败，使用一个临时的唯一标识符
+                        // 注意：这不是真正的IP，但可以在本地测试时使用
+                        const tempIP = 'local-' + Math.random().toString(36).substr(2, 9);
+                        resolve(tempIP);
+                    });
+            });
+        }
+
+        // 检查IP是否已经评论过
+        function hasUserReviewed(ip) {
+            const reviewedIPs = JSON.parse(localStorage.getItem('reviewedIPs')) || [];
+            return reviewedIPs.includes(ip);
+        }
+
+        // 保存已评论的IP
+        function saveReviewedIP(ip) {
+            const reviewedIPs = JSON.parse(localStorage.getItem('reviewedIPs')) || [];
+            if (!reviewedIPs.includes(ip)) {
+                reviewedIPs.push(ip);
+                localStorage.setItem('reviewedIPs', JSON.stringify(reviewedIPs));
+            }
+        }
+
+        // 监听评论表单提交事件
+        reviewForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // 获取用户IP
+            const userIP = await getUserIP();
+            
+            // 检查IP是否已经评论过
+            if (hasUserReviewed(userIP)) {
+                alert('您已经提交过评价，每个IP只能评论一次');
+                return;
+            }
+            
+            // 获取表单数据
+            const reviewerName = document.getElementById('reviewer-name').value;
+            const reviewContent = document.getElementById('review-content').value;
+            
+            // 获取评分
+            const serviceRating = parseInt(document.querySelector('[data-rating="service"]').nextElementSibling.textContent);
+            const professionalismRating = parseInt(document.querySelector('[data-rating="professionalism"]').nextElementSibling.textContent);
+            const communicationRating = parseInt(document.querySelector('[data-rating="communication"]').nextElementSibling.textContent);
+            
+            // 验证评分
+            if (serviceRating === 0 || professionalismRating === 0 || communicationRating === 0) {
+                alert('请完成所有评分项');
+                return;
+            }
+            
+            // 创建评价对象
+            const newReview = {
+                id: Date.now(),
+                name: reviewerName,
+                content: reviewContent,
+                ratings: {
+                    service: serviceRating,
+                    professionalism: professionalismRating,
+                    communication: communicationRating
+                },
+                ip: userIP, // 存储IP（可选）
+                date: new Date().toLocaleString('zh-CN')
+            };
+            
+            // 保存评价
+            saveReview(newReview);
+            
+            // 保存已评论的IP
+            saveReviewedIP(userIP);
+            
+            // 显示新评价
+            displayReview(newReview);
+            
+            // 清空表单
+            reviewForm.reset();
+            
+            // 重置评分
+            resetRatings();
+        });
+
+        // 重置评分
+        function resetRatings() {
+            const ratingStars = document.querySelectorAll('.rating-stars');
+            
+            ratingStars.forEach(container => {
+                setRating(container, 0);
+            });
+        }
+
+        // 保存评价到localStorage
+        function saveReview(review) {
+            // 获取现有评价
+            let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+            
+            // 添加新评价
+            reviews.unshift(review);
+            
+            // 保存回localStorage
+            localStorage.setItem('reviews', JSON.stringify(reviews));
+        }
+
+        // 加载所有评价
+        function loadReviews() {
+            // 获取现有评价
+            let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+            
+            // 清空评价列表
+            reviewsList.innerHTML = '';
+            
+            // 显示所有评价
+            reviews.forEach(review => {
+                displayReview(review);
+            });
+        }
+
+        // 显示单个评价
+        function displayReview(review) {
+            // 创建评价元素
+            const reviewItem = document.createElement('div');
+            reviewItem.className = 'review-item';
+            
+            // 构建评价HTML
+            reviewItem.innerHTML = `
+                <div class="review-header">
+                    <div class="review-name">${escapeHtml(review.name)}</div>
+                    <div class="review-date">${review.date}</div>
+                </div>
+                <div class="review-ratings">
+                    <div class="review-rating-item">
+                        <span class="review-rating-label">服务体验</span>
+                        <div class="review-rating-stars">
+                            ${generateRatingStars(review.ratings.service)}
+                        </div>
+                    </div>
+                    <div class="review-rating-item">
+                        <span class="review-rating-label">专业度</span>
+                        <div class="review-rating-stars">
+                            ${generateRatingStars(review.ratings.professionalism)}
+                        </div>
+                    </div>
+                    <div class="review-rating-item">
+                        <span class="review-rating-label">沟通体验感</span>
+                        <div class="review-rating-stars">
+                            ${generateRatingStars(review.ratings.communication)}
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">${escapeHtml(review.content)}</div>
+            `;
+            
+            // 添加到评价列表
+            reviewsList.appendChild(reviewItem);
+        }
+
+        // 生成星级评分HTML
+        function generateRatingStars(rating) {
+            let starsHtml = '';
+            for (let i = 1; i <= 5; i++) {
+                starsHtml += '<span class="review-rating-star">★</span>';
+            }
+            return starsHtml;
+        }
     </script>
 </body>
 </html>
